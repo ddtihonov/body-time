@@ -1,0 +1,51 @@
+@import '../../base.scss';
+.box{
+    @include main-column
+}
+
+.title{
+    @include title
+}
+
+.list{
+    box-sizing: border-box;
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.item{
+    width: 166px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.text{
+    font-size:14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: $text-color;
+    text-align: center;
+}
+
+.image{
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+}
+
+@media(max-width: 768px){
+    .title{
+        @include title-min
+    }
+    
+}

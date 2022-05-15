@@ -1,10 +1,33 @@
+
 $background-color: #FFF;
 $text-color:#363431;
 $green: #74B900;
+$green-light: #C7DF9E;
 $white: #FFF;
 $white-dark: #F3F3F3;
+$gray: #C6C6C6;
 
 
-//@mixin name {
-    
-//}
+@mixin main-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+@mixin title {
+    font-size:48px;
+    line-height: 46px;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+@mixin title-min {
+    font-size: 28px;
+    line-height: 27px;
+    margin: 0 0 30px;
+}

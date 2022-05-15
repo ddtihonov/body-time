@@ -1,0 +1,138 @@
+@import '../../base.scss';
+
+.main{
+    @include main-column
+}
+
+.title{
+    width: 400px;
+    font-size:48px;
+    line-height: 130%;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.box{
+    box-sizing: border-box;
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.box_image_big{
+    box-sizing: border-box;
+    width: 48%;
+    height: 464px;
+    background-image: url(../../image/Help/help_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.text_big{
+    width: 250px;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 400;
+    color: $white;
+    margin: 0;
+}
+
+.box_big{
+    box-sizing: border-box;
+    width: 48%;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box_image{
+    box-sizing: border-box;
+    width: 100%;
+    height: 49%;
+    background-image: url(../../image/Help/help_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.box_small{
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_small{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green-light;
+    height: 100%;
+    width: 48%;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    color: $white;
+    margin: 0;
+    text-align: center;
+    padding: 16px;
+}
+
+.text_gray{
+    background-color: $gray;
+}
+
+@media(max-width: 768px){
+    .title{
+        width: 288px;
+        font-size:28px;
+        margin-bottom: 30px;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .box_image_big{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .box_big{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box_image{
+        height: 144px;
+    }
+
+    .box_small{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_small{
+        width: 100%;
+        height: 144px;
+        margin-bottom: 24px;
+    }
+}
