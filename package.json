@@ -2,7 +2,7 @@
   "name": "body-time",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ddtihonov.github.io/react-burger/",
+  "homepage": "https://ddtihonov.github.io/body-time/",
   "dependencies": {
     "@types/node": "^17.0.32",
     "@types/react": "^18.0.9",
