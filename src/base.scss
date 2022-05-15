@@ -14,7 +14,7 @@ $gray: #C6C6C6;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 0 0 50px;
 }
 
 @mixin title {
@@ -23,11 +23,22 @@ $gray: #C6C6C6;
     font-weight: 400;
     color: $text-color;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 50px 0;
 }
 
 @mixin title-min {
     font-size: 28px;
     line-height: 27px;
-    margin: 0 0 30px;
+    margin: 30px 0;
+}
+
+@mixin main-page {
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 50px;
+    margin: 0;
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import header from './header.module.scss';
-import logo from '../../image/logo.svg'
-import WhatsApp from '../../image/WhatsApp.svg'
-import tel from '../../image/tel.svg'
-import location from '../../image/location.svg'
+import logo from '../../image/logo.svg';
+import WhatsApp from '../../image/WhatsApp.svg';
+import tel from '../../image/tel.svg';
+import location from '../../image/location.svg';
 
 export default function Header() {
     return (
@@ -12,12 +13,14 @@ export default function Header() {
           <div className={header.menu__icon}>
               <span></span>
           </div>
-          <img className={header.logo} src={logo} alt = 'логотип'/>
+          <Link  to="/">
+            <img className={header.logo} src={logo} alt = 'логотип'/>
+          </Link>
           <nav className={header.nav}>
-            <a className={header.link} href='#'>Услуги</a>
-            <a className={header.link} href='#'>Акции</a>
-            <a className={header.link} href='#'>Прайс</a>
-            <a className={header.link} href='#'>Контакты</a>
+            <Link className={header.link} to='/services'>Услуги</Link>
+            <Link className={header.link} to='/actions'>Акции</Link>
+            <Link className={header.link} to='/price'>Прайс</Link>
+            <Link className={header.link} to='/contacts'>Контакты</Link>
           </nav>
           <div className={header.phone_box}>
             <img className={header.image} src={tel} alt = 'трубка телефона'/>
@@ -28,7 +31,7 @@ export default function Header() {
             <img className={header.image} src={location} alt = 'логотип локация'/>
             <p className={header.location_text}>г. Новосибирск, ул. Вокзальная магистраль,16, оф. 205, 2 эт.</p>
           </div>
-          <a className={header.link_price} href='#'>Прайс</a>
+          <Link className={header.link_price} to='price'>Прайс</Link>
         </div>
     
       </header>

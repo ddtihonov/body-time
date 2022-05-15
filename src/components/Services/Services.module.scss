@@ -1,0 +1,78 @@
+@import '../../base.scss';
+
+.main {
+    @include main-page;
+}
+
+.title {
+    @include title;
+}
+
+.list {
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+.item {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 234px;
+    background-color: $white-dark;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    border-radius: 0 0 16px 16px;
+}
+
+.subtitle {
+    font-size:22px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.text {
+    font-size:16px;
+    line-height: 22px;
+    font-weight: 300;
+    color: $text-color;
+    text-align: left;
+    margin: 0 0 16px;
+
+    &:last-child{
+        margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .title{
+        @include title-min
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

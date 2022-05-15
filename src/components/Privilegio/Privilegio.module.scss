@@ -1,10 +1,11 @@
 @import '../../base.scss';
+
 .box{
-    @include main-column
+    @include main-column;
 }
 
 .title{
-    @include title
+    @include title;
 }
 
 .list{
@@ -40,6 +41,7 @@
 .image{
     width: 104px;
     height: 104px;
+    object-fit: cover;
     object-fit: cover;
 }
 

@@ -1,0 +1,15 @@
+@import '../../base.scss';
+
+.main{
+    @include main-page;
+}
+
+.title{
+    @include title;
+}
+
+@media(max-width: 768px){
+    .title{
+        @include title-min
+    }
+}
