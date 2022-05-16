@@ -1,15 +1,42 @@
 @import '../../base.scss';
 
-.main{
+.main {
     @include main-page;
 }
 
-.title{
+.title {
     @include title;
+}
+
+.list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 32px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.subtitle {
+    @include subtitle;
+}
+
+.text {
+    @include text;
 }
 
 @media(max-width: 768px){
     .title{
         @include title-min
+    }
+
+    .list {
+        flex-direction: column;
     }
 }

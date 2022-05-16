@@ -42,24 +42,11 @@
 }
 
 .subtitle {
-    font-size:22px;
-    line-height: 32px;
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 24px;
+    @include subtitle;
 }
 
 .text {
-    font-size:16px;
-    line-height: 22px;
-    font-weight: 300;
-    color: $text-color;
-    text-align: left;
-    margin: 0 0 16px;
-
-    &:last-child{
-        margin: 0;
-    }
+    @include text;
 }
 
 @media(max-width: 768px){
