@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/body-time/static/css/main.fc23ae93.css",
-    "main.js": "/body-time/static/js/main.af798bb6.js",
+    "main.css": "/body-time/static/css/main.168d4845.css",
+    "main.js": "/body-time/static/js/main.1ad8d7d0.js",
     "static/js/787.0a5f7a2d.chunk.js": "/body-time/static/js/787.0a5f7a2d.chunk.js",
     "static/media/image_8.png": "/body-time/static/media/image_8.5f9fe368cce332e755af.png",
     "static/media/image_9.png": "/body-time/static/media/image_9.7159a268d0686d7c7b57.png",
@@ -23,20 +23,25 @@
     "static/media/logo.svg": "/body-time/static/media/logo.e0b24f8d451135970676221b20d8b794.svg",
     "static/media/atom.svg": "/body-time/static/media/atom.7678adde82d6c2fc6aeadd4c0abdfcef.svg",
     "static/media/WhatsApp.svg": "/body-time/static/media/WhatsApp.afedfd8b4f1dd1b41d7fdd90cc0d2b27.svg",
+    "static/media/whatsapp.svg": "/body-time/static/media/whatsapp.77249c92bdea727af8a3a354e1857446.svg",
     "static/media/light-bulb.svg": "/body-time/static/media/light-bulb.a087bdc35bc33da2690babef901f1a0e.svg",
+    "static/media/active.svg": "/body-time/static/media/active.9a9167acc8b36e1845c1ef6fab0f3779.svg",
+    "static/media/disactive.svg": "/body-time/static/media/disactive.8439d467666d65dc14981da076424b39.svg",
+    "static/media/vk.svg": "/body-time/static/media/vk.ffcf95de1ab1f7247fc4b5f974f1801b.svg",
     "static/media/tel.svg": "/body-time/static/media/tel.14f22cc1842265d08cf5ccd0f6c1dbe0.svg",
     "static/media/hand.svg": "/body-time/static/media/hand.79ad8c667d554a4dff9149b01809394b.svg",
     "static/media/arrow.svg": "/body-time/static/media/arrow.3af93887c95f2fc566146dc90ed1fb09.svg",
     "static/media/location.svg": "/body-time/static/media/location.c819d2aecfb329fa8e89214130bded57.svg",
+    "static/media/google.svg": "/body-time/static/media/google.7af4734edd0bf5ca22d7d1464260f859.svg",
     "static/media/tick.svg": "/body-time/static/media/tick.2096f681bc1b0733f6d615609381c90e.svg",
     "index.html": "/body-time/index.html",
     "static/media/setting.svg": "/body-time/static/media/setting.9b96cc75a60a93ebbbe7db47f6f10313.svg",
-    "main.fc23ae93.css.map": "/body-time/static/css/main.fc23ae93.css.map",
-    "main.af798bb6.js.map": "/body-time/static/js/main.af798bb6.js.map",
+    "main.168d4845.css.map": "/body-time/static/css/main.168d4845.css.map",
+    "main.1ad8d7d0.js.map": "/body-time/static/js/main.1ad8d7d0.js.map",
     "787.0a5f7a2d.chunk.js.map": "/body-time/static/js/787.0a5f7a2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc23ae93.css",
-    "static/js/main.af798bb6.js"
+    "static/css/main.168d4845.css",
+    "static/js/main.1ad8d7d0.js"
   ]
 }
