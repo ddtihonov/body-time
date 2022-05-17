@@ -1,0 +1,157 @@
+@import '../../base.scss';
+
+.footer {
+    width: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    box-shadow: 0px -2px 8px rgba($gray, .5);
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.box_nav {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.box_social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_icon {
+    width: 40px;
+    height: 40px;
+
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $gray);
+        transition: .3s;
+}
+}
+
+.link {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    position: relative;
+
+    &:hover{
+        color: $gray;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    &::before{
+        background-color: $gray;
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        transition: 0.3s;
+        transform: scaleX(0);
+    }
+    &:hover:before{
+        transform: scaleX(1);
+    }
+}
+
+.box_we {
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.subtitle {
+    width: 100%;
+    color: $text-color;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0 0 16px;
+}
+
+.text {
+    width: 100%;
+    color: $text-color;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 300;
+    margin: 0 0 16px;
+}
+
+.copyright{
+    width: 100%;
+    color: $copyright;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 20px 0 0 20px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .box_nav {
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        margin-bottom: 20px;
+    } 
+
+    .link {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .social_icon {
+        width: 32px;
+        height: 32px;
+    }
+    .copyright{
+        font-size: 12px;
+        line-height: 15px;
+        margin: 20px 0 0 10px;
+    }
+}

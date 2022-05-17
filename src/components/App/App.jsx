@@ -7,6 +7,7 @@ import Services from '../Services/Services';
 import Actions from '../Actions/Actions';
 import Price from '../Price/Price';
 import Contacts from '../Contacts/Contacts';
+import Footer from '../Footer/Footer';
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Route exact path='/price'  element={<Price/>}/>
         <Route exact path='/contacts'  element={<Contacts/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 };

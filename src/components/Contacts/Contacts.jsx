@@ -1,4 +1,5 @@
 import React from "react";
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import styles from './Contacts.module.scss'
 import PageLink from "../PageLink/PageLink";
 
@@ -27,6 +28,17 @@ export default function Contacts () {
                     <p className={styles.text}>магистраль,16, оф. 205, 2 эт.</p>
                 </li>
             </ul>
+            <YMaps>
+                <Map  width='100%' height='400px' defaultState={{ center: [55.031365, 82.914195], zoom: 17}}>
+                    <Placemark geometry={[55.031365, 82.914195]}
+                    options={{
+                        iconLayout: 'default#image',
+                        iconImageSize: [80, 40],
+                        iconImageHref: 'https://ddtihonov.github.io/body-time/static/media/logo.e0b24f8d451135970676221b20d8b794.svg',
+                    }}
+                    />
+                </Map>
+            </YMaps>
         </section>
     )
 }
