@@ -40,6 +40,14 @@ export default function Training () {
                     color={'pink'}
                 />
             </div>
+            <div className={styles.box_price}>
+                <h3 className={styles.image_title}>Стоимость курса</h3>
+                <div className={styles.box_button}>
+                    <p className={styles.phone_text}>25 000 руб.</p>
+                    <button className={styles.button} type='button'>Записаться на курс</button>
+                    <p className={styles.price_text}>&#42; Возможно оформить рассрочку на 3 месяца</p>
+                </div>
+            </div>
         </section>
     )
 }

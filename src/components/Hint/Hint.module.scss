@@ -5,14 +5,27 @@
 }
 
 .hint {
+    box-sizing: border-box;
+    max-width: 800px;
     width: 100%;
-    display: flex; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
 .box {
+    background-color: $white-dark;
+    box-sizing: border-box;
+    max-width: 800px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+}
+
+.box_gray {
+    background-color: $lite-gray;
 }
 
 .title {
@@ -20,12 +33,31 @@
     line-height: 31px;
     font-weight: 400;
     margin: 0;
-    padding: 20px 0;
+}
+
+.list {
+    box-sizing: border-box;
+    border: 0.5px solid $gray;
+    background-color: $white;
+    width: 100%;
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover{
+        color: $green
+    }
 }
 
 @media(max-width: 768px){
     .title {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 20px;
         padding: 10px 0;
     }
