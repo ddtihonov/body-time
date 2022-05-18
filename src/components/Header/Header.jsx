@@ -18,7 +18,7 @@ export default function Header() {
           </Link>
           <nav className={header.nav}>
             <Link className={header.link} to='/services'>Услуги</Link>
-            <Link className={header.link} to='/actions'>Акции</Link>
+            <Link className={header.link} to='/training'>Обучение</Link>
             <Link className={header.link} to='/price'>Прайс</Link>
             <Link className={header.link} to='/contacts'>Контакты</Link>
           </nav>

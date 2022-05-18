@@ -4,7 +4,7 @@ import app from './App.module.scss';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Services from '../Services/Services';
-import Actions from '../Actions/Actions';
+import Training from '../Actions/Training';
 import Price from '../Price/Price';
 import Contacts from '../Contacts/Contacts';
 import Footer from '../Footer/Footer';
@@ -19,7 +19,7 @@ export default function App() {
       <Routes> 
         <Route exact path='/'  element={<Main/>}/>
         <Route exact path='/services'  element={<Services/>}/>
-        <Route exact path='/actions'  element={<Actions/>}/>
+        <Route exact path='/training'  element={<Training/>}/>
         <Route exact path='/price'  element={<Price/>}/>
         <Route exact path='/contacts'  element={<Contacts/>}/>
       </Routes>
