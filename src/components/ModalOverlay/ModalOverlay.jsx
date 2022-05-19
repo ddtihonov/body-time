@@ -1,5 +1,5 @@
 import React from 'react';
-import modal_overlay from './ModalOverlay.module.css';
+import modal_overlay from './ModalOverlay.module.scss';
 import PropTypes from "prop-types";
 
 export default function ModalOverlay({onClick}) {

@@ -1,0 +1,86 @@
+@import '../../base.scss';
+
+.box {
+    box-sizing: border-box;
+    max-width: 1140px;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.image {
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.box_info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50px;
+    padding: 0 5px;
+}
+
+.title {
+    font-size: 23px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text-color;
+    margin: 0 0 10px;
+}
+
+.text {
+    max-width: 100%;
+    width: 100%;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 300;
+    color: $text-color;
+    margin: 0 0 5px;
+}
+
+.prise {
+    color: $green;
+    font-size: 20px;
+    list-style: 21px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+@media(max-width: 768px){
+
+    .box {
+        flex-direction: column;
+    }
+
+    .box_info {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 21px;
+        line-height: 22px;
+    }
+    
+    .text {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .prise {
+        font-size: 20px;
+        list-style: 21px;
+    }
+}

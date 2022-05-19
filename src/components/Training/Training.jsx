@@ -6,8 +6,9 @@ import TrainingList from '../TrainingList/TrainingList';
 import { arrTheory, arrPractice } from '../../utils/data';
 import circleGreen from '../../image/Training/Ellipse_green.svg'
 import circlePink from '../../image/Training/Ellipse_pink.svg'
+import PropTypes from "prop-types";
 
-export default function Training () {
+export default function Training ({isOpen}) {
     return (
         <section className={styles.main}>
             <PageLink
@@ -44,10 +45,14 @@ export default function Training () {
                 <h3 className={styles.image_title}>Стоимость курса</h3>
                 <div className={styles.box_button}>
                     <p className={styles.phone_text}>25 000 руб.</p>
-                    <button className={styles.button} type='button'>Записаться на курс</button>
+                    <button className={styles.button} type='button' onClick={isOpen}>Записаться на курс</button>
                     <p className={styles.price_text}>&#42; Возможно оформить рассрочку на 3 месяца</p>
                 </div>
             </div>
         </section>
     )
 }
+
+Training.propTypes = {
+    isOpen: PropTypes.func.isRequired,
+};

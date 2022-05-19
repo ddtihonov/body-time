@@ -1,8 +1,7 @@
 import React, { useEffect} from 'react';
 import { createPortal } from "react-dom";
-import modal from './Modal.module.css'
+import modal from './Modal.module.scss'
 import ModalOverlay from '../ModalOverlay/ModalOverlay';
-import { CloseIcon } from "@ya.praktikum/react-developer-burger-ui-components";
 import PropTypes from "prop-types";
 
 export default function Modal({children, onClose, title}) {
@@ -20,8 +19,7 @@ export default function Modal({children, onClose, title}) {
         <ModalOverlay onClick={onClose}/>
             <div className={modal.box} >
                 {title && (<h2 className={modal.title}>{title}</h2>)}
-                <button className={modal.close_icon} type="button" aria-label="закрыть" onClick={onClose}>
-                    <CloseIcon className={modal.close_icon}  type="primary"/></button>
+                <button className={modal.close_icon} type="button" aria-label="закрыть" onClick={onClose}></button>
                 {children}
             </div>
         </>,
@@ -30,7 +28,7 @@ export default function Modal({children, onClose, title}) {
 };
 
 Modal.propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     onClose: PropTypes.func.isRequired,
     title: PropTypes.string,
 };

@@ -1,0 +1,55 @@
+@import '../../base.scss';
+
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white-dark;
+    padding: 0 20px;
+}
+
+.title {
+    @include title
+}
+
+.box {
+    display: flex;
+    margin: 50px auto;
+}
+
+.button_left {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background-image: url(../../image/EventSale/left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button_right {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background-image: url(../../image/EventSale/right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 768px){
+    
+    .title{
+        @include title-min
+    }
+}
