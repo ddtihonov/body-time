@@ -10,11 +10,13 @@ import Contacts from '../Contacts/Contacts';
 import Footer from '../Footer/Footer';
 import Modal from '../Modal/Modal';
 import ModalForm from '../ModalForm/ModalForm';
+import MenuMobile from '../MenuMobile/MenuMobile';
 
 
 export default function App() {
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isMenuMobile, setIsMenuMobile] = useState(false);
 
   const handleClose = useCallback(() => {
     setIsPopupOpen(false)
@@ -22,11 +24,22 @@ export default function App() {
 
   const handleOpen = useCallback(() => {
     setIsPopupOpen(true)
+  }, []);
+  
+  const handleCloseMenuMobile = useCallback(() => {
+    setIsMenuMobile(false)
+  }, []);
+
+  const handleOpenMenuMobile = useCallback(() => {
+    setIsMenuMobile(true)
+    console.log('fff')
   }, []); 
 
   return (
     <div className={app.page}>
-      <Header/>
+      <Header
+        isOpen={handleOpenMenuMobile}
+      />
       <Routes> 
         <Route exact path='/'  element={
         <Main
@@ -48,6 +61,9 @@ export default function App() {
           onClose={handleClose}
         />
       </Modal>}
+      {isMenuMobile && <MenuMobile
+        onClose={handleCloseMenuMobile}
+      />}
     </div>
   );
 };

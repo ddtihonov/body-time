@@ -5,12 +5,13 @@ import logo from '../../image/logo.svg';
 import WhatsApp from '../../image/WhatsApp.svg';
 import tel from '../../image/tel.svg';
 import location from '../../image/location.svg';
+import PropTypes from "prop-types";
 
-export default function Header() {
+export default function Header({isOpen}) {
     return (
       <header className={header.header}>
         <div className={header.box}>
-          <div className={header.menu__icon}>
+          <div className={header.menu__icon} onClick={isOpen}>
               <span></span>
           </div>
           <Link  to="/">
@@ -37,3 +38,7 @@ export default function Header() {
       </header>
     );
   };
+
+  Header.propTypes = {
+    isOpen: PropTypes.func.isRequired,
+};
