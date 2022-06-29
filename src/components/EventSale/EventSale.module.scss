@@ -1,13 +1,33 @@
 @import '../../base.scss';
 
 .main {
-    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $white-dark;
     padding: 0 20px;
+}
+
+.slides{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.slides_box{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    border-radius: 16px;
 }
 
 .title {
@@ -31,6 +51,12 @@
     background-image: url(../../image/EventSale/left.svg);
     background-position: center;
     background-repeat: no-repeat;
+    &:hover{
+        cursor: pointer;
+$copyright: #828282;
+        filter: drop-shadow(0 0 5px $gray);
+        transition: .3s;
+    }
 }
 
 .button_right {
@@ -45,6 +71,59 @@
     background-image: url(../../image/EventSale/right.svg);
     background-position: center;
     background-repeat: no-repeat;
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $gray);
+        transition: .3s;
+    }
+}
+
+.list {
+    list-style: none;
+    margin: 0 124px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-image: url(../../image/EventSale/off.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border: 0;
+    height: 16px;
+    width: 16px;
+}
+
+.button_active{
+    background-image: url(../../image/EventSale/on.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border: 0;
+    height: 16px;
+    width: 16px;
+}
+
+@media(max-width: 1200px){
+    .slides_box{
+        max-width: 950px;
+    }
+}
+
+@media(max-width: 1000px){
+    .slides_box {
+        width: 750px;
+    }
+
 }
 
 @media(max-width: 768px){
