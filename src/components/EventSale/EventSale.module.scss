@@ -1,12 +1,13 @@
 @import '../../base.scss';
 
 .main {
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $white-dark;
-    padding: 0 20px;
+    padding: 0 10px; 
 }
 
 .slides{
@@ -14,8 +15,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-auto-flow: column;
     white-space: nowrap;
     transition: transform 0.3s;
 }
@@ -26,7 +25,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
     border-radius: 16px;
 }
 
@@ -113,22 +112,35 @@ $copyright: #828282;
     width: 16px;
 }
 
-@media(max-width: 1200px){
-    .slides_box{
-        max-width: 950px;
-    }
-}
-
-@media(max-width: 1000px){
-    .slides_box {
-        width: 750px;
-    }
-
-}
-
 @media(max-width: 768px){
     
     .title{
         @include title-min
+    }
+
+    .button_left {
+        width: 48px;
+        height: 48px;
+
+    }
+    
+    .button_right {
+        width: 48px;
+        height: 48px;
+    }
+
+    .list {
+        margin: 0 62px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .list {
+        margin: 0 31px;
+    }
+
+    .box {
+        margin: 30px auto;
     }
 }

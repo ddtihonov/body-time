@@ -6,11 +6,11 @@ import { v4 as uuidv4 } from 'uuid'
 
 
 export default function EventSale() {
-    
+
 const [activeIndex, setActiveIndex] = useState(0)
 const [paused, setPaused] = useState(false)
 
-/*useEffect(() => {
+useEffect(() => {
         const interval = setInterval (() => {
             if (!paused){
             updateIndex(activeIndex + 1)
@@ -21,7 +21,7 @@ return () => {
         clearInterval(interval)
     }
 }
-})*/
+})
 
 
 const updateIndex = (newIndex) => {
@@ -33,6 +33,8 @@ const updateIndex = (newIndex) => {
 
     setActiveIndex(newIndex)
 }
+
+
 
 
     return (
