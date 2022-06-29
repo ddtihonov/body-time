@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/body-time/static/css/main.0c3e18cc.css",
-    "main.js": "/body-time/static/js/main.ec0b2404.js",
+    "main.css": "/body-time/static/css/main.d2af85db.css",
+    "main.js": "/body-time/static/js/main.48036293.js",
     "static/js/787.0a5f7a2d.chunk.js": "/body-time/static/js/787.0a5f7a2d.chunk.js",
     "static/media/image_8.png": "/body-time/static/media/image_8.5f9fe368cce332e755af.png",
     "static/media/Rectangle.png": "/body-time/static/media/Rectangle.736755787553fcd93b34.png",
@@ -23,7 +23,7 @@
     "static/media/image_3.jpg": "/body-time/static/media/image_3.4a6d48e23aa780b49344.jpg",
     "static/media/Roboto-Regular.woff2": "/body-time/static/media/Roboto-Regular.6da80660b317a900aa44.woff2",
     "static/media/Roboto-Light.woff2": "/body-time/static/media/Roboto-Light.7c46e842233e7968d5da.woff2",
-    "static/media/logo.svg": "/body-time/static/media/logo.e0b24f8d451135970676221b20d8b794.svg",
+    "static/media/logo.svg": "/body-time/static/media/logo.cf3944a3639c15fab0f50446fd3ef7e0.svg",
     "static/media/atom.svg": "/body-time/static/media/atom.7678adde82d6c2fc6aeadd4c0abdfcef.svg",
     "static/media/WhatsApp.svg": "/body-time/static/media/WhatsApp.afedfd8b4f1dd1b41d7fdd90cc0d2b27.svg",
     "static/media/whatsapp.svg": "/body-time/static/media/whatsapp.77249c92bdea727af8a3a354e1857446.svg",
@@ -44,12 +44,14 @@
     "static/media/close.svg": "/body-time/static/media/close.e347af1f9723d68705c4.svg",
     "static/media/Ellipse_pink.svg": "/body-time/static/media/Ellipse_pink.b676a7c4e0f14d471236a2d5b8005438.svg",
     "static/media/Ellipse_green.svg": "/body-time/static/media/Ellipse_green.60286c057c2fdec0ed4983cbaf1290c0.svg",
-    "main.0c3e18cc.css.map": "/body-time/static/css/main.0c3e18cc.css.map",
-    "main.ec0b2404.js.map": "/body-time/static/js/main.ec0b2404.js.map",
+    "static/media/off.svg": "/body-time/static/media/off.3d9a6a31fc4d74bac9b7.svg",
+    "static/media/on.svg": "/body-time/static/media/on.241a5d387ceef5b7f2b8.svg",
+    "main.d2af85db.css.map": "/body-time/static/css/main.d2af85db.css.map",
+    "main.48036293.js.map": "/body-time/static/js/main.48036293.js.map",
     "787.0a5f7a2d.chunk.js.map": "/body-time/static/js/787.0a5f7a2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c3e18cc.css",
-    "static/js/main.ec0b2404.js"
+    "static/css/main.d2af85db.css",
+    "static/js/main.48036293.js"
   ]
 }
