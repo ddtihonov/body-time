@@ -15,7 +15,7 @@ useEffect(() => {
             if (!paused){
             updateIndex(activeIndex + 1)
             }
-        }, 3000) 
+        }, 2000) 
 return () => {
     if (interval) {
         clearInterval(interval)

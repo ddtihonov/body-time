@@ -33,8 +33,8 @@ export default function Contacts () {
                     <Placemark geometry={[55.031365, 82.914195]}
                     options={{
                         iconLayout: 'default#image',
-                        iconImageSize: [80, 40],
-                        iconImageHref: 'https://ddtihonov.github.io/body-time/static/media/logo.e0b24f8d451135970676221b20d8b794.svg',
+                        iconImageSize: [40, 40],
+                        iconImageHref: 'https://bt-studio.ru/wp-content/uploads/2019/05/cropped-logo-bt.png',
                     }}
                     />
                 </Map>
